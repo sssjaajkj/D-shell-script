@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello i am shell script from hello world"
+echo "Hello i am shell script - hello"
