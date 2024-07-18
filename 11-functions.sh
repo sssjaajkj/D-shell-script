@@ -27,8 +27,11 @@ dnf install mysql -y
 
 VALIDATE $? "Installing mysql"
 
+dnf install git -y
+VALIDATE $? "install git"
+
 dnf install gift -y
 VALIDATE $? "Installing Git"
 
-dnf install git -y
-VALIDATE $? "install jdk"
+
+
