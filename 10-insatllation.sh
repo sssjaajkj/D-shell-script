@@ -34,10 +34,10 @@ echo "You are super usser..."
 fi
 dnf install mysqel -y
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
-echo " Installtion of MYSQL .... Failure "
-exit 1
+    echo " Installtion of MYSQL .... Failure "
+exit 1 # manually exit if error comes
 else
 echo " MYSQL installed .............. success"
 
