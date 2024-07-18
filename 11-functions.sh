@@ -15,6 +15,7 @@ then
     fi
 
 }
+
 if [ $USERID -ne 0 ]
 then 
     echo "Please run this script with root access"
@@ -29,22 +30,5 @@ VALIDATE $? "Installing mysql"
 dnf install gift -y
 VALIDATE $? "Installing Git"
 
-# if [ $? -ne 0 ] # previous command is succes or not $?
-# then 
-#     echo " Installtion of MYSQL .... Failure "
-# exit 1 # manually exit if error comes
-# else
-# echo " MYSQL installed .............. success"
-
-# fi
-
-# dnf install git -y
-
-# if [ $? -ne 0 ]
-#  then 
-#   echo "Insatllation of git .....Failure"
-#   exit 1
-#   else
-#   echo "Insatllation of git .....Success"
-#   fi
-#echo "Is script proceeding"
+dnf install jsdk -y
+VALIDATE $? "install jdk"
