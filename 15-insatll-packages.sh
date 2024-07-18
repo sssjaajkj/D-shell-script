@@ -24,11 +24,11 @@ fi
 
 for i in $@
 do
-    echo "package to install $i"
+    echo "package to install: $i"
     dnf list installed $i &>>$LOGFILE
     if [ $? -eq 0  ]
     then 
-    echo "$i already installed .....SKIPPING 
+         echo "$i already installed .....SKIPPING 
     else
         echo "$i not installed .....install 
 fi
