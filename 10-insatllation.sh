@@ -32,7 +32,7 @@ then
 else
 echo "You are super usser..."
 fi
-dnf install mysql -y
+dnf install mysqel -y
 
 if [ $? -ne 0]
 then 
