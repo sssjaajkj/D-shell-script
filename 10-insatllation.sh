@@ -32,3 +32,5 @@ else
 echo "You are super usser..."
 fi
 dnf install mysql -y
+
+echo "Is script proceeding"
