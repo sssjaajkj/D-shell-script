@@ -4,7 +4,17 @@ USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "."  -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
+VALIDATE(){
+if  [ $1 -ne 0 ]
+then 
+    echo  -e "$2 ... $R Failure $N"
+    exit
+    else
+     echo -e "$2 ... $G Success $N"
+ fi
+}
 if [ $USERID -ne 0 ]
+
 then 
  echo  "plz run this script with root access....."
 else
