@@ -30,5 +30,5 @@ VALIDATE $? "Installing mysql"
 dnf install gift -y
 VALIDATE $? "Installing Git"
 
-dnf install jsdk -y
+dnf install git -y
 VALIDATE $? "install jdk"
