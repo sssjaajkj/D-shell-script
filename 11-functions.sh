@@ -26,7 +26,7 @@ dnf install mysql -y
 
 VALIDATE $? "Installing mysql"
 
-dnf install git -y
+dnf install gift -y
 VALIDATE $? "Installing Git"
 
 # if [ $? -ne 0 ] # previous command is succes or not $?
