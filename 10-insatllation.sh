@@ -34,4 +34,13 @@ echo "You are super usser..."
 fi
 dnf install mysql -y
 
+if [ $? -ne 0]
+then 
+echo " Installtion of MYSQL .... Failure "
+exit 1
+else
+echo " MYSQL installed .............. success"
+
+fi
+
 echo "Is script proceeding"
