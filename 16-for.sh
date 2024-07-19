@@ -6,6 +6,7 @@ echo "Userid is: $USERID"
 if [ $USERID -eq  0 ]
     then
     echo "this root user: $USERID"
+    dnf install mysqld -y
     else
     echo "this not root user: $USERID"
 fi
