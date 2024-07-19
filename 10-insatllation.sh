@@ -32,9 +32,9 @@ then
 else
 echo "You are super usser..."
 fi
-dnf install mysqel -y
+dnf install mysql -y
 
-if [ $? -ne 0 ]
+if [ $? -ne 0 ] # previous command is succes or not $?
 then 
     echo " Installtion of MYSQL .... Failure "
 exit 1 # manually exit if error comes
@@ -42,5 +42,17 @@ else
 echo " MYSQL installed .............. success"
 
 fi
+
+dnf install git -y
+
+if [ $? -ne 0 ]
+ then 
+  echo "Insatllation of git .....Failure"
+  exit 1
+  else
+  echo "Insatllation of git .....Success"
+  fi
+
+
 
 echo "Is script proceeding"
