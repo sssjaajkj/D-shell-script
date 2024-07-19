@@ -36,6 +36,8 @@ do
          echo -e "$i already installed .....$Y SKIPPING $N"
     else
 
-        echo  -e "$i not installed .....$R install $N"
+        dnf insatll $i -y &>>LOGFILE
+        #echo  -e "$i not installed .....$R install $N"
+        VALIDATE  $? "Installation of $i"
 fi
 done  
