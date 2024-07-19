@@ -32,5 +32,5 @@ then
     fi
 
 }
- dnf install mysqle -y
+ dnf install mysql -y
 VALIDATE $? "Installation.."
