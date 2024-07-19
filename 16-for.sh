@@ -3,6 +3,10 @@ USERID=$(id -u)
 
 echo "Userid is: $USERID"
 
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
 if [ $USERID -eq  0 ]
     then
     echo "this root user: $USERID"
@@ -20,10 +24,10 @@ VALIDATE(){
 
 if  [ $1 -ne 0 ]
 then 
-    echo "$2 ... Failure"
+    echo -e "$2 ... $R Failure $N"
     exit
     else
-     echo "$2 ... Success"
+     echo -e "$2 ... $G Success $N"
     fi
 
 }
